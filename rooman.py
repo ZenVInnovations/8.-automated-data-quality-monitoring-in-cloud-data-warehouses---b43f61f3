@@ -10,8 +10,7 @@ import pandas as pd
 def load_data(data):
     return pd.read_csv(data)
 
-data = load_data("/Users/ashutohkumarsah/Desktop/python/Diabetes Missing Data.csv")
-
+data = load_data(r"C:\Users\ULLAS\OneDrive\Desktop\8.-automated-data-quality-monitoring-in-cloud-data-warehouses---b43f61f3-main\Diabetes Missing Data.csv")
 print(data.head())
 
 def check_null_values(df):
@@ -36,8 +35,7 @@ st.title("📊 AI-Based Data Quality Monitoring")
 
 
 try:
-    data = load_data("/Users/ashutohkumarsah/Desktop/python/Diabetes Missing Data.csv")
-
+    data = load_data(r"C:\Users\ULLAS\OneDrive\Desktop\8.-automated-data-quality-monitoring-in-cloud-data-warehouses---b43f61f3-main\Diabetes Missing Data.csv")
     st.subheader("📌 Data Preview")
     st.dataframe(data.head())
 
